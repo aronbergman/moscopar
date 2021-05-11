@@ -47,6 +47,10 @@
     display: flex;
     flex-direction: row;
 
+    @media #{$tablet} {
+      display: none;
+    }
+
     @media #{$mobile} {
      display: none;
     }

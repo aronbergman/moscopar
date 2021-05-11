@@ -93,7 +93,7 @@ export default function Home() {
                 <Footer/>
             </main>
 
-            <div className={styles.TapTop} style={goingUp ? { display: 'block' } : { display: 'none' }}
+            <div className={[styles.TapTop, 'tap-top'].join(' ')} style={goingUp ? { display: 'block' } : { display: 'none' }}
                  onClick={tapToTop}>
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-up" role="img"
                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"

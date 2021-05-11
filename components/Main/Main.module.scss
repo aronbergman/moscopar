@@ -7,6 +7,10 @@
   width: auto;
   margin: 0 119px $base-spacing*6;
 
+  @media #{$tablet} {
+    margin: 0 50px $base-spacing*6;
+  }
+
   @media #{$mobile} {
     margin: 0;
   }
@@ -50,13 +54,18 @@
   letter-spacing: 0.05em;
   text-transform: lowercase;
   color: #000000;
-  margin: 0;
+  margin: 40px 0;
+
+  @media #{$tablet} {
+    font-size: $base-spacing*2;
+  }
 
   @media #{$mobile} {
     font-weight: 500;
     font-size: 24px;
     line-height: 24px;
     padding: 0 24px;
+    margin: 0;
   }
 }
 
@@ -73,8 +82,12 @@
   text-transform: lowercase;
   color: #FFFFFF;
   border: none;
-  margin-top: 60px;
+  margin-top: 40px;
   cursor: pointer;
+
+  @media #{$tablet} {
+    margin: 0 auto;
+  }
 
   @media #{$mobile} {
     margin: 25px auto 0;
@@ -87,9 +100,16 @@
 .Image {
   width: $base-spacing*38;
   height: $base-spacing*38;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   background-image: url("../../public/main-image.png");
+
+  @media #{$tablet} {
+    width: 40vw;
+    height: 40vw;
+    margin: 40px auto 0;
+  }
 
   @media #{$mobile} {
     display: none;

@@ -7,6 +7,10 @@
   justify-content: space-between;
   padding-top: 46px;
 
+  @media #{$tablet} {
+    margin: 0 50px $base-spacing;
+  }
+
   @media #{$mobile} {
     margin: 0;
     padding: 45px 21px 21px;
@@ -17,8 +21,12 @@
   display: flex;
   flex-direction: row;
 
-  @media #{$mobile} {
-    flex-direction: column;
+  @media #{$tabletMax} {
+    display: none;
+  }
+
+  @media #{$tablet} {
+    display: none;
   }
 
   @media #{$mobile} {

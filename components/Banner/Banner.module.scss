@@ -30,6 +30,11 @@
     color: #fff;
     margin: 0 250px;
 
+    @media #{$tablet} {
+      font-size: 50px;
+      margin: 0 100px;
+    }
+
     @media #{$mobile} {
       display: none;
     }

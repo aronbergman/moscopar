@@ -4,9 +4,15 @@
   display: flex;
   flex-direction: column;
   margin: 0 119px 6em;
+  overflow: hidden;
+
+  @media #{$tablet} {
+    margin: 0 50px $base-spacing*6;
+  }
 
   @media #{$mobile} {
-    margin: 0;
+    padding: 0 0 20px;
+    margin: -20px 0 0;
   }
 
   .Title {
@@ -25,15 +31,21 @@
     }
   }
 
+  div > .Speakers{
+    &:nth-child(1) {
+      margin-top: $base-spacing*3;
+
+      @media #{$tabletMax} {
+        margin: 0;
+      }
+    }
+  }
+
   .Squires {
     display: flex;
     flex-wrap: wrap;
-    margin-top: $base-spacing*3;
     overflow: hidden;
-
-    @media #{$mobile} {
-      margin: 0;
-    }
+    margin: 0;
   }
 
   .Square {
@@ -44,9 +56,16 @@
     justify-content: flex-end;
     align-content: flex-end;
 
+    @media #{$tablet} {
+      width: calc(50vw - 60px);
+      height: calc(50vw - 60px);
+      overflow: hidden;
+    }
+
     @media #{$mobile} {
-      width: 50%;
+      width: 50vw;
       height: 50vw;
+      overflow: hidden;
     }
 
     &:nth-child(1) {
@@ -161,9 +180,13 @@
     color: #000;
     padding: 0 10px;
 
+    @media #{$tabletMax} {
+      font-size: $base-spacing*.6;
+    }
+
     @media #{$mobile} {
-      font-size: 13px;
-      margin: 16px;
+      font-size: $base-spacing*.5;
+      margin: 0 16px 16px;
       padding: 0;
     }
   }
@@ -174,6 +197,14 @@
     width: $base-spacing*8;
     height: $base-spacing*.8;
     z-index: 1;
+
+    @media #{$tabletMax} {
+      width: 200px;
+    }
+
+    @media #{$tablet} {
+      width: 200px;
+    }
 
     @media #{$mobile} {
       width: 100px;

@@ -6,6 +6,7 @@
   justify-content: flex-start;
   position: relative;
   min-height: 450px;
+  overflow: hidden;
 
   .Container {
     width: auto;
@@ -20,6 +21,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0 auto;
   }
 
   .Image {
@@ -49,6 +51,11 @@
     margin-top: 69px;
     margin-left: 100px;
 
+    @media #{$tablet} {
+      margin: 0;
+      width: max-content;
+    }
+
     @media #{$mobile} {
       display: none;
     }
@@ -66,6 +73,10 @@
     color: #000000;
     padding: 20px 38px;
     margin: 50px 0 0 220px;
+
+    @media #{$tablet} {
+      margin: 80px 0 0;
+    }
 
     @media #{$mobile} {
       display: none;
@@ -109,6 +120,17 @@
     margin: 140px 119px 6em;
     width: auto;
 
+    @media #{$tablet} {
+      background-image: url("../../public/about-titles.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: calc(100% - 40px);
+      box-sizing: border-box;
+      height: 300px;
+      margin: 100px 0 0 40px;
+    }
+
     @media #{$mobile} {
       background-image: url("../../public/about-titles.png");
       background-size: contain;
@@ -129,8 +151,8 @@
     max-width: 180px;
     min-width: 180px;
 
-    @media #{$mobile} {
-  display: none;
+    @media #{$tablet} {
+      display: none;
     }
 
     span {
@@ -170,7 +192,7 @@
     width: 2px;
     background: #000000;
 
-    @media #{$mobile} {
+    @media #{$tablet} {
       display: none;
     }
   }

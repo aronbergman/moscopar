@@ -5,6 +5,10 @@
   flex-direction: column;
   margin: 0 119px 6em;
 
+  @media #{$tablet} {
+    margin: 0 50px $base-spacing*6;
+  }
+
   @media #{$mobile} {
     margin: 0;
   }

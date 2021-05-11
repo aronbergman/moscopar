@@ -33,7 +33,7 @@ const Event = ({ events }) => {
                                     return (
                                         <div className={styles.TimetableRow}>
                                             <div className={styles.TimetableTime}>
-                                                <div className={styles.TimeEvent}>{event.time}</div>
+                                                <div className={styles.TimeEvent} dangerouslySetInnerHTML={{__html: event.time}}/>
                                                 <div className={styles.SessionEvent}>{event.session}</div>
                                                 {event.moderators && <div className={styles.ModeratorsEvent}>
                                                     <span>Модераторы:</span>
