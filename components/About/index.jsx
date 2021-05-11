@@ -9,8 +9,8 @@ const About = () => {
         const { number } = useSpring({
             reset: true,
             reverse: flip,
-            from: { number: num },
-            number: 0,
+            from: { number: 0 },
+            number: num,
             delay: 200,
             config: config.molasses,
         })
