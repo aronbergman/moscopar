@@ -155,7 +155,7 @@
     .TimetableEvent {
       width: 45%;
 
-      @media #{$tablet} {
+      @media #{$tabletMax} {
         width: 70%;
       }
     }
