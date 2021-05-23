@@ -3,6 +3,15 @@ import Slider from "react-slick";
 import styles from './Speakers.module.scss'
 import Square from "./Square";
 import anton from '../../public/anton.jpeg'
+import katlama from '../../public/katlama.jpeg'
+import otran from '../../public/otran.jpeg'
+import marselin from '../../public/marselin.jpeg'
+import palih from '../../public/palih.jpeg'
+import pronin from '../../public/pronin.jpg'
+import drobyshevskaya from '../../public/drobyshevskaya.jpg'
+import kaminsky from '../../public/kaminsky.jpg'
+import orlovaMorozova from '../../public/orlovaMorozova.jpg'
+
 
 const Speakers = () => {
     var settings = {
@@ -33,76 +42,76 @@ const Speakers = () => {
 
 
                     <div className={styles.Squires}>
-                        <Square photo={anton} color={'#FF005C'}/>
+                        <Square photo={katlama} color={'#FF005C'}/>
                         <Square
-                            nameFirst={'Антон'}
-                            nameSecond={'Красовский'}
-                            description={'российский общественный деятель, журналист, публицист, телеведущий'}
+                            nameFirst={' Кристин'}
+                            nameSecond={'Катлама'}
+                            description={'Профессор Университета Сорбонны, Института общественного здравоохранения и эпидемиологии им. Пьера Луи Пастера, Руководитель исследовательской группы по антиретровирусной стратегии Французского национального агентства по исследованию ВИЧ, основатель и Президент AFRAVIH, член правления EACS.'}
                             arrow={'right'}
                             color={'#FF005C'}
                         />
-                        <Square photo={anton} color={'#002381'}/>
+                        <Square photo={otran} color={'#002381'}/>
                         <Square
-                            nameFirst={'Антон'}
-                            nameSecond={'Красовский'}
-                            description={'российский общественный деятель, журналист, публицист, телеведущий'}
+                            nameFirst={' Брижит'}
+                            nameSecond={'Отран'}
+                            description={'профессор иммунологии в Университетской больнице Питье-Сальпетриер в Париже, Университета Пьера и Марии Кюри, Франция.'}
                             arrow={'right'}
                             color={'#002381'}
                             textColor={'white'}
                         />
                         <Square
-                            nameFirst={'Антон'}
-                            nameSecond={'Красовский'}
-                            description={'российский общественный деятель, журналист, публицист, телеведущий'}
+                            nameFirst={'Анн-Женевьев '}
+                            nameSecond={'Марселин'}
+                            description={'профессор медицины в Университет Сорбонны в Париже, Франция, клинический вирусолог в больнице Питье-Сальпетриер.'}
                             arrow={'left'}
                             color={'#265CDD'}
                             textColor={'white'}
                         />
-                        <Square photo={anton} color={'#00CFFF'}/>
+                        <Square photo={marselin} color={'#00CFFF'}/>
                         <Square
-                            nameFirst={'Антон'}
-                            nameSecond={'Красовский'}
-                            description={'российский общественный деятель, журналист, публицист, телеведущий'}
+                            nameFirst={'Роман '}
+                            nameSecond={'Палих'}
+                            description={'врач отделения инфекционных заболеваний Больницы Пети-Сальпетриер.'}
                             arrow={'left'}
                             color={'#00CFFF'}/>
-                        <Square photo={anton} color={'#fff'}/>
+                        <Square photo={palih} color={'#fff'}/>
                     </div>
                 </div>
                 <div>
                     <div className={styles.Squires}>
-                        <Square photo={anton} color={'#FF005C'}/>
+                        <Square photo={pronin} color={'#FF005C'}/>
                         <Square
-                            nameFirst={'Антон'}
-                            nameSecond={'Красовский'}
-                            description={'российский общественный деятель, журналист, публицист, телеведущий'}
+                            nameFirst={' Пронин'}
+                            nameSecond={'Александр Юрьевич'}
+                            description={'Главный врач Московского Областного Центра СПИД. главный внештатный специалист Министерства здравоохранения Московской области по проблемам диагностики и лечения ВИЧ-инфекции, к.м.н.'}
                             arrow={'right'}
                             color={'#FF005C'}
                         />
-                        <Square photo={anton} color={'#002381'}/>
+                        <Square photo={drobyshevskaya} color={'#002381'}/>
                         <Square
-                            nameFirst={'Антон'}
-                            nameSecond={'Красовский'}
-                            description={'российский общественный деятель, журналист, публицист, телеведущий'}
+                            nameFirst={' Дробышевская'}
+                            nameSecond={'Елена Владимировна'}
+                            description={'Заместитель главного врача по медицинской части Московского Областного Центра СПИД, врач высшей категории.'}
                             arrow={'right'}
                             color={'#002381'}
                             textColor={'white'}
                         />
                         <Square
-                            nameFirst={'Антон'}
-                            nameSecond={'Красовский'}
-                            description={'российский общественный деятель, журналист, публицист, телеведущий'}
+                            nameFirst={'Орлова-Морозова '}
+                            nameSecond={'Елена Александровна '}
+                            description={'заведующая амбулаторно-поликлиническим отделением Московского Областного Центра СПИД, к.м.н.'}
                             arrow={'left'}
                             color={'#265CDD'}
                             textColor={'white'}
                         />
-                        <Square photo={anton} color={'#00CFFF'}/>
+                        <Square photo={orlovaMorozova} color={'#00CFFF'}/>
                         <Square
-                            nameFirst={'Антон'}
-                            nameSecond={'Красовский'}
-                            description={'российский общественный деятель, журналист, публицист, телеведущий'}
+                            nameFirst={'Каминский '}
+                            nameSecond={'Григорий Дмитриевич'}
+                            description={'Руководитель отдела инфекционной патологии НМИЦ ФПИ, врач-инфекционист, доктор медицинских наук.'}
                             arrow={'left'}
                             color={'#00CFFF'}/>
-                        <Square photo={anton} color={'#fff'}/>
+                        <Square photo={kaminsky} color={'#fff'}/>
                     </div>
                 </div>
             </Slider>

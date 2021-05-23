@@ -5,7 +5,7 @@ const Banner = () => {
     return (
         <div className={styles.Banner}>
             <h3 className={styles.Title}>присоединяйся <br/>
-                к более чем 500 <br/>
+                к более чем 300 <br/>
                 участникам
                 <span>регистрация
 

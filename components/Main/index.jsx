@@ -5,7 +5,7 @@ const Main = () => {
     return (
         <div className={styles.Main}>
             <div className={styles.Titles}>
-                <h2 className={styles.Description}>21–22 сентября <span>онлайн</span></h2>
+                <h2 className={styles.Description}>24–25 июня <span>онлайн</span></h2>
                 <h1 className={styles.Title}>российско-французская <br/>
                     научно-практическая <br/>
                     конференция</h1>

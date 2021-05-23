@@ -8,9 +8,9 @@ import image4 from '../../public/partners/4.png'
 import image5 from '../../public/partners/5.png'
 import image6 from '../../public/partners/6.png'
 import image7 from '../../public/partners/7.png'
-import image8 from '../../public/partners/8.png'
-import image9 from '../../public/partners/9.png'
-import image10 from '../../public/partners/10.png'
+// import image8 from '../../public/partners/8.png'
+// import image9 from '../../public/partners/9.png'
+// import image10 from '../../public/partners/10.png'
 
 const Partners = () => {
     const partners = [
@@ -21,9 +21,9 @@ const Partners = () => {
         {image: image5},
         {image: image6},
         {image: image7},
-        {image: image8},
-        {image: image9},
-        {image: image10},
+        // {image: image8},
+        // {image: image9},
+        // {image: image10},
     ]
 
     const settings = {

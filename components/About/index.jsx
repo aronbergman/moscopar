@@ -17,30 +17,25 @@ const About = () => {
 
         return <animated.div>{number.to(n => n.toFixed(0))}</animated.div>
     }
+
     return (
         <div className={styles.About} id="about">
             <div className={styles.Rows}>
                 <div className={styles.Container}>
                     <h1 className={styles.Title}>о конференции</h1>
                     <div className={styles.Description}>
-                        Конференция пройдет 21-22 сентября 2020
-                        года в Московской школе управления
-                        «Сколково». Эксперты по борьбе с ВИЧ
-                        соберутся, чтобы обсудить инновационные
-                        решения по проведению профилактики,
-                        диагностики и лечения ВИЧ-инфекции,
-                        взаимодействие и роль некоммерческих
-                        организаций в этой проблеме
-                        и консолидацию усилий гражданского.
+                        Конференция пройдет 24-25 июня 2021 года в&nbsp;онлайн формате. Эксперты по&nbsp;борьбе
+                        с&nbsp;ВИЧ из&nbsp;России и&nbsp;Франции соберутся, чтобы обсудить современные тренды
+                        в&nbsp;лечении ВИЧ-инфекции, влияние пандемии COVID-19&nbsp;на оказание помощи пациентам
+                        с&nbsp;ВИЧ, оптимизацию системы оказания медицинской помощи при ВИЧ, опыт эффективных практик
+                        доступа к&nbsp;уязвимым группам и&nbsp;новые подходы в&nbsp;лабораторной диагностике ВИЧ
+                        и&nbsp;ко-инфекций.
                     </div>
 
                     <div className={styles.DescriptionMobile}>
-                        Конференция пройдет 21-22 <br/>сентября 2020
-                        года в Московской школе управления
-                        «Сколково». Эксперты по борьбе с ВИЧ<br/>
-                        соберутся, чтобы обсудить <br/>инновационные
-                        решения по <br/>проведению профилактики,<br/>
-                        диагностики и лечения <br/>ВИЧ-инфекции.
+                        Конференция пройдет 24-25 июня 2021 года в&nbsp;онлайн формате. Эксперты по&nbsp;борьбе
+                        с&nbsp;ВИЧ из&nbsp;России и&nbsp;Франции соберутся, чтобы обсудить современные тренды
+                        в&nbsp;лечении ВИЧ-инфекции.
                     </div>
 
                 </div>
@@ -50,13 +45,13 @@ const About = () => {
             <div className={styles.Counts}>
                 <div className={styles.CountItem}><span>{Number(2)}</span> <p>дня</p></div>
                 <div className={styles.CountLine}/>
-                <div className={styles.CountItem}><span>{Number(750)}</span> <p>участников</p></div>
+                <div className={styles.CountItem}><span>{Number(300)}</span> <p>участников</p></div>
                 <div className={styles.CountLine}/>
-                <div className={styles.CountItem}><span>{Number(17)}</span> <p>панелей с&nbsp;участниками</p></div>
+                <div className={styles.CountItem}><span>{Number(3)}</span> <p>сессии</p></div>
                 <div className={styles.CountLine}/>
-                <div className={styles.CountItem}><span>{Number(15)}</span> <p>часов</p></div>
+                <div className={styles.CountItem}><span>{Number(9)}</span> <p>часов</p></div>
                 <div className={styles.CountLine}/>
-                <div className={styles.CountItem}><span>{Number(10)}</span> <p>спикеров</p></div>
+                <div className={styles.CountItem}><span>{Number(19)}</span> <p>спикеров</p></div>
             </div>
         </div>
     );

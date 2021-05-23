@@ -24,7 +24,7 @@ const Event = ({ events }) => {
                         {open && <div className={styles.Timetable}>
                             <div className={styles.TimetableRow}>
                                 <div className={styles.TimetableTime}>
-                                    <p>здесь и далее <br/>по парижскому <br/>времени</p>
+                                    <p>здесь и далее <br/>время московское</p>
                                 </div>
                             </div>
                             {
