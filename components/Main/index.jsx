@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Main.module.scss'
+import Button from "./../Button/Button";
 
 const Main = () => {
     return (
@@ -9,7 +10,10 @@ const Main = () => {
                 <h1 className={styles.Title}>российско-французская <br/>
                     научно-практическая <br/>
                     конференция</h1>
-                <button className={styles.Button}>регистрация</button>
+                <Button
+                    label="Регистрация"
+                    color="#000"
+                />
             </div>
 
             <div className={styles.Image}/>

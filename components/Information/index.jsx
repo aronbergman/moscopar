@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styles from './Information.module.scss'
 import image1 from './../../public/one.png'
 import image2 from './../../public/two.png'
+import Button from "../Button/Button";
 
 const Information = () => {
     const [open, setOpen] = useState(false)
@@ -49,7 +50,7 @@ const Information = () => {
                             </div>
                         ))}
                     </div>
-                    <div className={styles.Registration}>регистрация</div>
+                    <Button label={"регистрация"} color={'#FF005C'}/>
                 </div>}
             </div>
 

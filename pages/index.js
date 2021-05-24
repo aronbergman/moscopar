@@ -95,12 +95,12 @@ export default function Home() {
 
             <div className={[styles.TapTop, 'tap-top'].join(' ')} style={goingUp ? { display: 'block' } : { display: 'none' }}
                  onClick={tapToTop}>
-                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-up" role="img"
-                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                     className="svg-inline--fa fa-arrow-up fa-w-14 fa-9x">
-                    <path fill="currentColor"
-                          d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"
-                          className=""></path>
+                <svg id="Layer_1"
+                     style={{transform: 'rotate(180deg)'}}
+                     data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 143.68 181.43">
+                    <path className="cls-1"
+                          style={{fill:'#ff005c'}}
+                          d="M140.05,91.44a11.44,11.44,0,0,0-16.17.58l-40,43.06V12.37A12.22,12.22,0,0,0,72.59,0a11.9,11.9,0,0,0-9,3.24A12.06,12.06,0,0,0,59.85,12V135.11L19.81,92A11.44,11.44,0,0,0,3.05,107.59l68.79,73.84,68.79-73.84A11.44,11.44,0,0,0,140.05,91.44Z"/>
                 </svg>
             </div>
 

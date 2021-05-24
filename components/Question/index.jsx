@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Question.module.scss'
+import Button from "../Button/Button";
+import axios from "axios";
 
 const Question = () => {
     const [state, setState] = useState({
@@ -17,8 +19,28 @@ const Question = () => {
     }
 
     const handleSubmit = (event) => {
-        alert('A name was submitted: ' + state.value);
         event.preventDefault();
+
+        axios.post('https://api.spid.center/v3/feedback', {
+            name: state.name,
+            email: state.email,
+            phone: state.phone,
+            message: state.question,
+            code: 2
+        }, {
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+                'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
+                'Access-Control-Allow-Origin': '*',
+            }
+        }).then(r => {
+            setState({
+                question: '',
+                name: '',
+                phone: '',
+                email: '',
+            })
+        })
     }
 
     return (
@@ -42,9 +64,15 @@ const Question = () => {
                 </div>
 
                 <div className={styles.FormSubmit}>
-                    <input type="submit" value="отправить"/>
+                    <Button label={"отправить"} color={'#000'} submit/>
+
                     <div className={styles.CheckBox}>
-                        <input type="checkbox" defaultChecked={true}/>
+                        <label className={styles.checkbox}>
+                            <input type="checkbox"
+                                   defaultChecked={true}
+                            />
+                            <span/>
+                        </label>
                         <p>я согласен с условиями и способами обработки и хранения персональных данных</p>
                     </div>
                 </div>

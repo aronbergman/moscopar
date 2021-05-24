@@ -50,14 +50,21 @@
   font-style: normal;
   font-weight: 500;
   font-size: $base-spacing*3;
-  line-height: 50px;
+  line-height: 70px;
   letter-spacing: 0.05em;
   text-transform: lowercase;
   color: #000000;
-  margin: 40px 0;
+  margin: 40px 40px 40px 0;
+
+
+  @media #{$tabletMax} {
+    font-size: 40px;
+    line-height: 60px;
+  }
 
   @media #{$tablet} {
-    font-size: $base-spacing*2;
+    font-size: 30px;
+    line-height: 40px;
   }
 
   @media #{$mobile} {
@@ -69,47 +76,14 @@
   }
 }
 
-.Button {
-  width: $base-spacing*14;
-  height: $base-spacing*4;
-  background: #000;
-  font-family: 'Proxima Nova Regular', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: $base-spacing;
-  line-height: 18px;
-  letter-spacing: 0.05em;
-  text-transform: lowercase;
-  color: #FFFFFF;
-  border: none;
-  margin-top: 40px;
-  cursor: pointer;
-
-  @media #{$tablet} {
-    margin: 0 auto;
-  }
-
-  @media #{$mobile} {
-    margin: 25px auto 0;
-    width: 165.74px;
-    height: 55px;
-    font-size: 14px;
-  }
-}
-
 .Image {
-  width: $base-spacing*38;
-  height: $base-spacing*38;
+  width: 40vw;
+  height: 40vw;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   background-image: url("../../public/main-image.png");
-
-  @media #{$tablet} {
-    width: 40vw;
-    height: 40vw;
-    margin: 40px auto 0;
-  }
+  margin: -15px auto 0;
 
   @media #{$mobile} {
     display: none;
